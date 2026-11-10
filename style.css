@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ft-navy: #14213d;
+  --ft-blue: #5b5ce2;
+  --ft-purple: #7778f7;
+  --ft-muted: #778198;
+  --ft-border: #e9edf4;
+  --ft-bg: #f5f7fb;
+}
+* { box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; color: #202a3b; }
+h1,h2,h3,h4,.navbar-brand { font-family: 'Manrope', sans-serif; }
+a { color: var(--ft-blue); }
+.ft-navbar { background: var(--ft-navy); }
+.navbar-brand { letter-spacing: -.5px; font-size: 1.35rem; }
+.brand-mark { display: inline-grid; place-items: center; width: 31px; height: 31px; margin-right: 5px; border-radius: 10px; color: white; background: var(--ft-blue); font-weight: 800; }
+.btn-primary { --bs-btn-bg: var(--ft-blue); --bs-btn-border-color: var(--ft-blue); --bs-btn-hover-bg: #4849c8; --bs-btn-hover-border-color: #4849c8; --bs-btn-active-bg: #4849c8; --bs-btn-active-border-color: #4849c8; }
+.btn-outline-primary { --bs-btn-color: var(--ft-blue); --bs-btn-border-color: #c9caff; --bs-btn-hover-bg: var(--ft-blue); --bs-btn-hover-border-color: var(--ft-blue); }
+.dashboard-page { background: var(--ft-bg); min-height: 100vh; }
+.page-title { font-size: clamp(1.65rem, 3vw, 2.15rem); font-weight: 800; letter-spacing: -1.2px; }
+.eyebrow { color: #828ba0; font-size: .69rem; font-weight: 700; letter-spacing: 1.35px; }
+.stat-card,.content-card { background: #fff; border: 1px solid var(--ft-border); border-radius: 18px; padding: 23px; box-shadow: 0 7px 24px rgba(24,39,75,.035); }
+.stat-label { color: #788297; font-size: .9rem; font-weight: 600; }
+.stat-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; font-size: 1.1rem; font-weight: 700; }
+.stat-icon.purple { background: #efefff; color: #6465e8; }
+.stat-icon.green { background: #e8f8ef; color: #24a568; }
+.stat-icon.orange { background: #fff2e6; color: #ed913a; }
+.stat-value { margin: 14px 0 7px; font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 800; letter-spacing: -1px; }
+.stat-note { font-size: .8rem; font-weight: 700; }
+.positive,.amount-in { color: #209b67 !important; }
+.negative,.amount-out { color: #df6b62 !important; }
+.mini-bars { height: 35px; display: flex; align-items: end; gap: 7px; }
+.mini-bars i { flex: 1; border-radius: 5px 5px 2px 2px; background: linear-gradient(180deg,#9293ff,#5b5ce2); opacity: .85; }
+.progress { height: 8px; background: #eef1f6; border-radius: 20px; }
+.progress-bar { border-radius: 20px; }
+.section-title { font-size: 1.08rem; font-weight: 800; letter-spacing: -.3px; }
+.transaction-table { font-size: .85rem; }
+.transaction-table thead th { color: #8992a5; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; border-bottom-color: var(--ft-border); padding: 12px 8px; white-space: nowrap; }
+.transaction-table tbody td { padding: 13px 8px; border-bottom-color: #f0f2f6; white-space: nowrap; }
+.transaction-table tbody tr:last-child td { border-bottom: 0; }
+.transaction-table strong { font-size: .86rem; }
+.transaction-table small { font-size: .73rem; }
+.transaction-icon { width: 37px; height: 37px; display: inline-grid; place-items: center; border-radius: 12px; font-size: 1rem; }
+.transaction-icon.food { background: #fff3e7; }
+.transaction-icon.salary { background: #e8f8ef; color: #219a66; }
+.transaction-icon.transport { background: #eaf3ff; }
+.transaction-icon.home { background: #f0edff; color: #7067d8; }
+.transaction-icon.shopping { background: #fff0f0; color: #dc7474; }
+.budget-row { margin-bottom: 23px; font-size: .85rem; }
+.tip-box { padding: 15px; background: #f3f4ff; border: 1px solid #e6e7ff; border-radius: 13px; color: #4c4e9f; }
+.tip-box p { color: #71749a; line-height: 1.5; }
+.auth-page { min-height: 100vh; background: #f4f6fb; }
+.auth-wrap { padding-top: 42px; padding-bottom: 42px; }
+.auth-shell { max-width: 1050px; margin: 0 auto; background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 18px 55px rgba(25,39,75,.10); }
+.auth-aside { position: relative; overflow: hidden; min-height: 650px; padding: 58px 48px; color: white; background: linear-gradient(145deg,#202c52 0%,#4446a8 58%,#7778f7 100%); flex-direction: column; justify-content: space-between; }
+.signup-aside { background: linear-gradient(145deg,#123d4b 0%,#287e83 55%,#65b7a6 100%); }
+.auth-aside h1 { line-height: 1.12; letter-spacing: -1.7px; }
+.auth-aside > div:first-child { position: relative; z-index: 1; }
+.auth-aside-note { max-width: 270px; color: #fff; font-size: .95rem; line-height: 1.7; }
+.auth-decoration { position: absolute; right: -28px; bottom: -110px; color: rgba(255,255,255,.08); font-family: 'Manrope',sans-serif; font-size: 28rem; font-weight: 800; line-height: 1; }
+.signup-benefits { padding-left: 0; list-style: none; color: rgba(255,255,255,.9); line-height: 2.4; position: relative; z-index: 1; }
+.signup-benefits li::before { content: '✓'; display: inline-grid; place-items: center; width: 23px; height: 23px; margin-right: 10px; border-radius: 50%; background: rgba(255,255,255,.18); font-size: .8rem; }
+.auth-form-area { padding: 65px 70px; }
+.signup-form-area { padding-top: 48px; padding-bottom: 48px; }
+.auth-form-area h2 { font-size: 2rem; letter-spacing: -1px; }
+.form-label { font-size: .87rem; font-weight: 600; color: #3c4659; }
+.form-control { border-color: #e1e6ef; border-radius: 10px; padding: .75rem .9rem; font-size: .9rem; }
+.form-control:focus { border-color: #8d8ef4; box-shadow: 0 0 0 .2rem rgba(91,92,226,.12); }
+.form-control-lg { min-height: 52px; font-size: .95rem; }
+.form-check-input:checked { background-color: var(--ft-blue); border-color: var(--ft-blue); }
+.x-small { font-size: .72rem; }
+@media (max-width: 991.98px) {
+  .auth-wrap { padding-top: 25px; }
+  .auth-shell { max-width: 600px; }
+  .auth-form-area,.signup-form-area { padding: 42px 30px; }
+}
+@media (max-width: 575.98px) {
+  .stat-card,.content-card { padding: 18px; }
+  .auth-form-area,.signup-form-area { padding: 34px 22px; }
+  .auth-form-area h2 { font-size: 1.7rem; }
+}
